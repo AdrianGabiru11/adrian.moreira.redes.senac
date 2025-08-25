@@ -1,0 +1,16 @@
+def soma(x,y):
+    return x + y;
+
+def subtracao(x,y):
+    return x - y;
+
+def multiplicacao(x,y):
+    return x * y;
+
+def divisao(y,x):
+    return x // y;
+
+print(soma(10,5));
+print(subtracao(10,3));
+print(multiplicacao(2,3));
+print(divisao(5,35));
