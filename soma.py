@@ -1,4 +1,4 @@
 def soma(x,y):
     return x + y;
 
-print(soma(24,69));
+print(soma(10,5));
