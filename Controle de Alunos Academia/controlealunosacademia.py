@@ -25,4 +25,3 @@ alunos = [
 def calcular_media(avaliacoes)
     return sum(avaliacoes) / len(avaliacoes)#sum: soma os valores da lista, len: conta quantos valores tem na lista
 
-#Etapa 3 - 
