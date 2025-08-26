@@ -21,7 +21,32 @@ alunos = [
     }
 ]
 
-#Etapa 2 - Colocar uma função que calcule a média da lista de avaliações dos alunos.
-def calcular_media(avaliacoes)
-    return sum(avaliacoes) / len(avaliacoes)#sum: soma os valores da lista, len: conta quantos valores tem na lista
+#Etapa 2 - Colocar uma função que calcule a média da lista de avaliações dos alunos;
+def calcular_media(avaliacoes):
+    return sum(avaliacoes) / len(avaliacoes)#sum: soma os valores da lista, len: conta quantos valores tem na lista, assim descobrindo a média;
 
+#Etapa 4 - Criar uma função que mostre apenas os alunos ativos;
+def mostrar_alunos_ativos(alunos):
+    print("Alunos Ativos: ")
+    for aluno in alunos:
+        if aluno["ativo"]:
+            media = calcular_media(aluno["avaliacoes"])
+        print(f"Nome: {aluno["nome"]}")
+        print(f"Idade: {aluno["idade"]}")
+        print(f"Altura: {aluno["altura"]}")
+        print(f"Média Avaliações: {media:.1f}")
+        print("-"*20)
+
+def mostrar_alunos_inativos(alunos):
+    print("Alunos Inativos: ")
+    for aluno in alunos:
+        if not aluno["ativo"]:
+            media = calcular_media(aluno["avaliacoes"])
+        print(f"Nome: {aluno["nome"]}")
+        print(f"Idade: {aluno["idade"]}")
+        print(f"Altura: {aluno["altura"]}")
+        print(f"Média Avaliações: {media:.1f}")
+        print("-"*20)
+    
+mostrar_alunos_ativos(alunos)
+mostrar_alunos_inativos(alunos)
